@@ -2,6 +2,7 @@
 
 ## Instalação
 
+-   dnsmasq
 
 
 ## Configuração
