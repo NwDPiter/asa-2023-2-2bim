@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Pedro Felipe">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>SMB - ASA: Serviços para 2º bimestre</title>
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "SMB";
+    var mkdocs_page_input_path = "smb/index.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> ASA: Serviços para 2º bimestre</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Serviços para o 2º bimestre</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Dhcp</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../dhcp/">DHCP</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Dns</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../dns/">DNS</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Ldap</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../ldap/">LDAP</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Proxy</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../proxy/">PROXY</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Smb</span>
+    <ul class="subnav">
+                <li class=" current">
+                    
+    <a class="current" href="./">SMB</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#smb">SMB</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#instalacao">Instalação</a></li>
+        
+            <li><a class="toctree-l4" href="#configuracao">Configuração</a></li>
+        
+            <li><a class="toctree-l4" href="#teste">Teste</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">ASA: Serviços para 2º bimestre</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Smb &raquo;</li>
+        
+      
+    
+    <li>SMB</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="smb">SMB</h1>
+<h2 id="instalacao">Instalação</h2>
+<ul>
+<li>samba-ad</li>
+<li>krb5-config</li>
+</ul>
+<h2 id="configuracao">Configuração</h2>
+<p>1º - Vamos configurar o nome de nossa máquina com o nome de nosso dominio em: (/etc/hostname)</p>
+<pre><code>berlin.alemanha.lab
+</code></pre>
+<p>2º - Agora configura a linha do local host em: (/etc/hosts)</p>
+<pre><code>berlin.alemanha.lab
+</code></pre>
+<p>2.1 - Faça um backup do arquivo smb.conf que está em: (/etc/samba/smb.conf)</p>
+<p>3º - Após isso vamos configura nosso domínio usando:</p>
+<ul>
+<li>samba-tool domain provision --use-rfc2307 --interactive</li>
+</ul>
+<p>4º - Despois de criar seu dominio vamos configurar o aquivo smb.conf que está em: (/etc/samba)</p>
+<p><a href="https://im.ge/i/xxDG7D"><img alt="Captura de tela de 2023-12-28 18-27-59" src="https://i.im.ge/2023/12/29/xxDG7D.Captura-de-tela-de-2023-12-28-18-27-59.png" /></a></p>
+<p>Nesse imagem mostra a configuração do compartilhamento de pasta com o windows, foram criadas duas pastas [Carvalho] e [sales]</p>
+<p>5º - Agora vamos nos conctar ao domínio que criamos pelo windows vá em:</p>
+<p><a href="https://im.ge/i/xxUqWG"><img alt="PC-&amp;gt;propriedades" src="https://i.im.ge/2023/12/29/xxUqWG.PC-propriedades.jpg" /></a></p>
+<p>Clique em <strong>Alterar configurações</strong>
+<a href="https://im.ge/i/xxU7ha"><img alt="alteração de config" src="https://i.im.ge/2023/12/29/xxU7ha.alteracao-de-config.jpg" /></a></p>
+<p>Depois em alterar, aparecerá uma tela menor, nela coloque o nome do computador e o domíno como está na imagem
+<a href="https://im.ge/i/xxUaox"><img alt="alterar e domínio" src="https://i.im.ge/2023/12/29/xxUaox.alterar-e-dominio.jpg" /></a></p>
+<p>6º - Para criar os usuários e grupos, estando na maquina windows pesquise sobre active directory e abra</p>
+<p><a href="https://im.ge/i/xxU6h8"><img alt="ad" src="https://i.im.ge/2023/12/29/xxU6h8.ad.jpg" /></a></p>
+<p>6.1º - A criação e assim: Novo -&gt; Usuário
+<a href="https://im.ge/i/xxUcXP"><img alt="criação" src="https://i.im.ge/2023/12/29/xxUcXP.criacao.jpg" /></a>
+Insira as credenciais dele.</p>
+<p><a href="https://im.ge/i/xxUYZp"><img alt="usuário teste" src="https://i.im.ge/2023/12/29/xxUYZp.usuario-teste.jpg" /></a></p>
+<p>senha..</p>
+<p><a href="https://im.ge/i/xxU3wq"><img alt="senha" src="https://i.im.ge/2023/12/29/xxU3wq.senha.jpg" /></a></p>
+<p>6.2 - Criação de grupos: Novo -&gt; Grupos</p>
+<p><a href="https://im.ge/i/xxh2DM"><img alt="grupo" src="https://i.im.ge/2023/12/29/xxh2DM.grupo.jpg" /></a></p>
+<p>Insira o nome do grupo -&gt; ok</p>
+<p><a href="https://im.ge/i/xxhOeh"><img alt="grupo-concluido" src="https://i.im.ge/2023/12/29/xxhOeh.grupo-concluido.jpg" /></a></p>
+<p>8º - Nessa imagem e possívei ver os grupos criados e seu usuários</p>
+<p><a href="https://im.ge/i/xuI2YC"><img alt="grupos" src="https://i.im.ge/2023/12/22/xuI2YC.grupos.jpg" /></a></p>
+<p>8.1 - Para adicionar usuário no grupo é assim: Seleciona o grupo -&gt; vai na aba de mebros -&gt; adicionar </p>
+<p><a href="https://im.ge/i/xxitk4"><img alt="add-grupo" src="https://i.im.ge/2023/12/29/xxitk4.add-grupo.jpg" /></a></p>
+<p>9º - Nessa etapa vemos que cada pessoa está em seu respectivo grupo</p>
+<p><a href="https://im.ge/i/xuI1U4"><img alt="sales" src="https://i.im.ge/2023/12/22/xuI1U4.sales.jpg" /></a>
+<a href="https://im.ge/i/xuIOoD"><img alt="carvalho" src="https://i.im.ge/2023/12/22/xuIOoD.carvalho.jpg" /></a></p>
+<h2 id="teste">Teste</h2>
+<p><a href="https://im.ge/i/xuIuWY"><img alt="arquivo" src="https://i.im.ge/2023/12/22/xuIuWY.arquivo.jpg" /></a>
+<a href="https://im.ge/i/xuLqcz"><img alt="luciana" src="https://i.im.ge/2023/12/22/xuLqcz.luciana.jpg" /></a>
+<a href="https://im.ge/i/xuLUSX"><img alt="saulo" src="https://i.im.ge/2023/12/22/xuLUSX.saulo.jpg" /></a></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../proxy/" class="btn btn-neutral" title="PROXY"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../proxy/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>
