@@ -24,59 +24,51 @@
 
 4º - Despois de criar seu dominio vamos configurar o aquivo smb.conf que está em: (/etc/samba)
 
-[![Captura de tela de 2023-12-28 18-27-59](https://i.im.ge/2023/12/29/xxDG7D.Captura-de-tela-de-2023-12-28-18-27-59.png)](https://im.ge/i/xxDG7D)
+![Alt text](Fotos-SMB/Foto1.png)
 
 Nesse imagem mostra a configuração do compartilhamento de pasta com o windows, foram criadas duas pastas [Carvalho] e [sales]
 
 5º - Agora vamos nos conctar ao domínio que criamos pelo windows vá em:
 
-[![PC-&amp;gt;propriedades](https://i.im.ge/2023/12/29/xxUqWG.PC-propriedades.jpg)](https://im.ge/i/xxUqWG)
+![Alt text](Fotos-SMB/Foto2.jpg)
 
 Clique em **Alterar configurações**
-[![alteração de config](https://i.im.ge/2023/12/29/xxU7ha.alteracao-de-config.jpg)](https://im.ge/i/xxU7ha)
+![Alt text](Fotos-SMB/Foto3.jpg)
 
 Depois em alterar, aparecerá uma tela menor, nela coloque o nome do computador e o domíno como está na imagem
-[![alterar e domínio](https://i.im.ge/2023/12/29/xxUaox.alterar-e-dominio.jpg)](https://im.ge/i/xxUaox)
+![Alt text](Fotos-SMB/Foto4.jpg)
 
 6º - Para criar os usuários e grupos, estando na maquina windows pesquise sobre active directory e abra
 
-[![ad](https://i.im.ge/2023/12/29/xxU6h8.ad.jpg)](https://im.ge/i/xxU6h8)
+![Alt text](Fotos-SMB/Foto5.jpg)
 
 6.1º - A criação e assim: Novo -> Usuário
-[![criação](https://i.im.ge/2023/12/29/xxUcXP.criacao.jpg)](https://im.ge/i/xxUcXP)
-Insira as credenciais dele.
+![Alt text](Fotos-SMB/Foto6.jpg)
 
-[![usuário teste](https://i.im.ge/2023/12/29/xxUYZp.usuario-teste.jpg)](https://im.ge/i/xxUYZp)
+Insira as credenciais dele.
+![Alt text](Fotos-SMB/Foto7.jpg)
 
 senha..
-
-[![senha](https://i.im.ge/2023/12/29/xxU3wq.senha.jpg)](https://im.ge/i/xxU3wq)
+![Alt text](Fotos-SMB/Foto8.jpg)
 
 6.2 - Criação de grupos: Novo -> Grupos
-
-[![grupo](https://i.im.ge/2023/12/29/xxh2DM.grupo.jpg)](https://im.ge/i/xxh2DM)
+![Alt text](Fotos-SMB/Foto9.jpg)
 
 Insira o nome do grupo -> ok
-
-[![grupo-concluido](https://i.im.ge/2023/12/29/xxhOeh.grupo-concluido.jpg)](https://im.ge/i/xxhOeh)
+![Alt text](Fotos-SMB/Foto10.jpg)
 
 8º - Nessa imagem e possívei ver os grupos criados e seu usuários
 
-[![grupos](https://i.im.ge/2023/12/22/xuI2YC.grupos.jpg)](https://im.ge/i/xuI2YC)
+![Alt text](Fotos-SMB/Foto11.jpg)
 
 8.1 - Para adicionar usuário no grupo é assim: Seleciona o grupo -> vai na aba de mebros -> adicionar 
 
-[![add-grupo](https://i.im.ge/2023/12/29/xxitk4.add-grupo.jpg)](https://im.ge/i/xxitk4)
+![Alt text](Fotos-SMB/Foto12.jpg)
 
 9º - Nessa etapa vemos que cada pessoa está em seu respectivo grupo
 
-[![sales](https://i.im.ge/2023/12/22/xuI1U4.sales.jpg)](https://im.ge/i/xuI1U4)
-[![carvalho](https://i.im.ge/2023/12/22/xuIOoD.carvalho.jpg)](https://im.ge/i/xuIOoD)
+![Alt text](Fotos-SMB/Foto13.jpg) ![Alt text](Fotos-SMB/Foto14.jpg) [Alt text](index.md)
 
 
 ## Teste
 
-
-[![arquivo](https://i.im.ge/2023/12/22/xuIuWY.arquivo.jpg)](https://im.ge/i/xuIuWY)
-[![luciana](https://i.im.ge/2023/12/22/xuLqcz.luciana.jpg)](https://im.ge/i/xuLqcz)
-[![saulo](https://i.im.ge/2023/12/22/xuLUSX.saulo.jpg)](https://im.ge/i/xuLUSX)

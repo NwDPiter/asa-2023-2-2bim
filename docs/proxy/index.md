@@ -21,7 +21,7 @@ Durante a instalação será criado várias arquivos e diretórios, entre eles:
 
 Proucure a linha que tem _http_access **deny** all_ e troque para **allow** isso vai permitir o acesso para todos os site, desse jeito:
 
-[![Screenshot_2023-11-22_19-12-37](https://i.im.ge/2023/11/23/AK3UI4.Screenshot-2023-11-22-19-12-37.jpg)](https://im.ge/i/AK3UI4)
+![Alt text](Fotos-Proxy/Foto1.jpg)
 
 Ou deixar como está e permita apenas os sites específicos no processo de configuração.
 
@@ -43,11 +43,11 @@ Existe vários (TIPO_DA_ACL)
 
 O arquivo por padrão vem assim:
 
-[![Captura de tela 2023-11-21 213021](https://i.im.ge/2023/11/22/A8LYmY.Captura-de-tela-2023-11-21-213021.png)](https://im.ge/i/A8LYmY)
+![Alt text](Fotos-Proxy/Foto2.png)
 
 Aqui um exemplo de um acl criada:
 
-[![Captura de tela 2023-11-21 213400](https://i.im.ge/2023/11/22/A8LfHf.Captura-de-tela-2023-11-21-213400.png)](https://im.ge/i/A8LfHf)
+![Alt text](Fotos-Proxy/Foto3.png)
 
 
 Neste exemplo o nome da acl é *'sites_block'*. É para bloquear ou permitir o site o padrão de construção é:
@@ -64,7 +64,7 @@ Tipos de permissão
 
 O exemplo ficará assim:
 
-[![Captura de tela 2023-11-21 213424](https://i.im.ge/2023/11/22/A8LVA1.Captura-de-tela-2023-11-21-213424.png)](https://im.ge/i/A8LVA1)
+![Alt text](Fotos-Proxy/Foto4.png)
 
 Agora e só ir no navegador e configura o proxy, por padrão: 
 
@@ -89,6 +89,5 @@ Fazer a configuração de 4 ACLs distintas, conforme a atividade passada em sala
 
 ## Teste
 
-
-[![suap](https://i.im.ge/2023/12/22/xu7lCX.suap.jpg)](https://im.ge/i/xu7lCX)
-[![facebook](https://i.im.ge/2023/12/22/xu7rp8.facebook.jpg)](https://im.ge/i/xu7rp8)
+![Alt text](Fotos-Proxy/Teste1.jpg) 
+![Alt text](Fotos-Proxy/Teste2.jpg)

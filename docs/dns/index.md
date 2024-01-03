@@ -9,11 +9,11 @@
     
 1º - Vamos configurar o nome de nossa máquina com o nome de nosso dominio em: (/etc/hostname)
 
-    berlin.alemanha.lab
+    EX: berlin.alemanha.lab
 
 2º - Agora configura a linha do local host em: (/etc/hosts)
 
-    berlin.alemanha.lab
+    EX: berlin.alemanha.lab
 
 2.1 - Faça um backup do arquivo smb.conf que está em: (/etc/samba/smb.conf)
 

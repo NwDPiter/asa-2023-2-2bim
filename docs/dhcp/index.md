@@ -6,7 +6,7 @@
 
 ## Configuração
 
-1º - Aquivo de configuração do dnsmasq é:
+1º - Arquivo de configuração do dnsmasq é:
 
     /etc/dnsmasq.conf
 
@@ -42,25 +42,26 @@ todas as configurações no arquivo(exemplo.conf) vai migra para dnsmasq.conf.
 
         EX: log-facility= /var/log/dnsmasq.log
 
-* Infoma os IPs fixos
+* Informa os IPs fixos
 
         EX:dhcp-host= Ip-da-máquina, Mac-da-máquina
 
 Arquivo de configuração do dnsmasq
 
-[![config-dhcp](https://i.im.ge/2024/01/03/xeHYSM.config-dhcp.png)](https://im.ge/i/xeHYSM)
-
+![Alt text](Fotos-DHCP/Foto1.png)
 
 Esse será o modo de configura no linux (alpine)
 
-[![config-ip](https://i.im.ge/2024/01/03/xeHcVD.config-ip.png)](https://im.ge/i/xeHcVD)
+Caminho: /etc/network/interface
+
+![Alt text](Fotos-DHCP/Foto2.png)
 
 É esse no windows
 
 
-[![imagem_2024-01-02_172142542](https://i.im.ge/2024/01/03/xeGUuf.imagem-2024-01-02-172142542.png)](https://im.ge/i/xeGUuf)
+![Alt text](Fotos-DHCP/Foto3.png)
 
 
 ## Teste
 
-[![teste](https://i.im.ge/2024/01/03/xeHb6Y.teste.png)](https://im.ge/i/xeHb6Y)
+![Alt text](Fotos-DHCP/teste1.png)
