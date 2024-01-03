@@ -2,8 +2,9 @@
 
 ## Instalação
 
--   samba
+-   samba-dc
 -   krb5
+-   smbclient
 
 ## Configuração
     
@@ -15,20 +16,60 @@
 
     EX: berlin.alemanha.lab
 
-2.1 - Faça um backup do arquivo smb.conf que está em: (/etc/samba/smb.conf)
+2.1º - Faça um backup do arquivo smb.conf que está em: (/etc/samba/smb.conf)
+
+2.2º - Desative o samba antes de iniciar o passo (3)
+
+* Alpine (rc-service samba stop)
+* Baseados no debian (systemctl stop samba)
 
 3º - Após isso vamos configura nosso domínio usando:
 
 -   samba-tool domain provision --use-rfc2307 --interactive
 
+4º Essa são as etapas da configuração **(O que está entre [ ] e o padrão só da ENTER)**
 
-Incluir o(s) nome(s) e o conteúdo do(s) arquivo(s) de configuração.
+![Alt text](Fotos-DNS/Foto1.jpg)
 
-Cinco registros (4 pontos cada):
+4.1 Despois de configura vamo ativar o samba
 
-- 3 do tipo A (Endereços);
-- 2 do tipo CNAME (`www` e `docs`);
+* Alpine (rc-service samba start)
+* Baseados no debian (systemctl start samba)
+
+5º Após a configuração vamos para o windows **(Ambas as máquinas devem está na mesma rede)**
+
+![Alt text](Fotos-DNS/Foto2.jpg)
+
+5.1º Vai abrir essa tela, digite o domínio criado
+
+![Alt text](Fotos-DNS/Foto3.jpg)
+
+5.2º Quando entra, vai ficar assim:
+
+![Alt text](Fotos-DNS/Foto4.jpg)
+
+6º Para criar um host A é assim: Clique com o direito na tela -> Novo Host (A ou AAAA)
+
+![Alt text](Fotos-DNS/Foto6.jpg)
+
+6.1º Insira um nome e o ip de redirecionamento
+
+![Alt text](Fotos-DNS/Foto7.jpg)
+
+6.2º Criando um cname
+
+![Alt text](Fotos-DNS/Foto8.jpg)
+
+6.3º Atribuindo um cname: Informe um nome e clique em proucurar, encontre o A criado
+
+![Alt text](Fotos-DNS/Foto9.jpg)
+![Alt text](Fotos-DNS/Foto10.jpg)
+
+7º Arquivo final 
+
+![Alt text](Fotos-DNS/Foto11.jpg)
 
 ## Teste
 
-[![dns](https://i.im.ge/2023/12/22/xuDmFM.dns.jpg)](https://im.ge/i/xuDmFM)
+
+![Alt text](Fotos-DNS/Teste.jpg)

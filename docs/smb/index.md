@@ -72,3 +72,6 @@ Insira o nome do grupo -> ok
 
 ## Teste
 
+![Alt text](Fotos-SMB/teste.jpg)
+![Alt text](Fotos-SMB/Teste1.jpg) 
+![Alt text](Fotos-SMB/Teste2.jpg)
