@@ -24,11 +24,11 @@ todas as configurações no arquivo(exemplo.conf) vai migra para dnsmasq.conf.
 
 * Define a faixa de ip   (inicial , ip final , mascara de rede , tempo que o dispositivo fica com o ip)
 
-        EX: dhcp-range= 192.168.0.10, 192.168.0.254 , 255.255.255.0 , 12h
+        EX: dhcp-range= 192.168.1.10, 192.168.1.254 , 255.255.255.0 , 12h
 
-* Define um dns 
+* Define o gateway da rede
 
-        EX: dhcp-option= 3 , 192.168.0.1  (3: Identifica o servidor DNS)
+        EX: dhcp-option= 3 , 192.168.1.254  (3: Identifica o Gateway)
 
 * Define outro dns (**Opicional**)
 
@@ -48,7 +48,7 @@ todas as configurações no arquivo(exemplo.conf) vai migra para dnsmasq.conf.
 
 Arquivo de configuração do dnsmasq
 
-![Alt text](Fotos-DHCP/Foto1.png)
+![Alt text](Fotos-DHCP/Foto1.jpg)
 
 Esse será o modo de configura no linux (alpine)
 
@@ -65,3 +65,4 @@ Caminho: /etc/network/interface
 ## Teste
 
 ![Alt text](Fotos-DHCP/teste1.png)
+![Alt text](Fotos-DHCP/Teste2.jpg)

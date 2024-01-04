@@ -45,14 +45,15 @@ O arquivo por padrão vem assim:
 
 ![Alt text](Fotos-Proxy/Foto2.png)
 
-Aqui um exemplo de um acl criada:
+Aqui alguns exemplos de acls criadas:
 
-![Alt text](Fotos-Proxy/Foto3.png)
+![Alt text](Fotos-Proxy/Foto3.jpg)
 
-
-Neste exemplo o nome da acl é *'sites_block'*. É para bloquear ou permitir o site o padrão de construção é:
+Neste exemplo uma das acls é *'sites_block'*. É para bloquear ou permitir o site o padrão de construção é:
 
     -   http_access permissão NOME_DA_ACL
+
+![Alt text](Fotos-Proxy/Foto3.1.jpg)
 
 Tipos de permissão 
 
