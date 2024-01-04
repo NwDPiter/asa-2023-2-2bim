@@ -108,6 +108,10 @@
                     
     <a class="" href="../proxy/">PROXY</a>
                 </li>
+                <li class="">
+                    
+    <a class="" href="../proxy/tipos_de_acl/">Tipos de acl</a>
+                </li>
     </ul>
 	    </li>
           
@@ -180,12 +184,12 @@
 </li>
 <li>
 <p>Define a faixa de ip   (inicial , ip final , mascara de rede , tempo que o dispositivo fica com o ip)</p>
-<pre><code>EX: dhcp-range= 192.168.0.10, 192.168.0.254 , 255.255.255.0 , 12h
+<pre><code>EX: dhcp-range= 192.168.1.10, 192.168.1.254 , 255.255.255.0 , 12h
 </code></pre>
 </li>
 <li>
-<p>Define um dns </p>
-<pre><code>EX: dhcp-option= 3 , 192.168.0.1  (3: Identifica o servidor DNS)
+<p>Define o gateway da rede</p>
+<pre><code>EX: dhcp-option= 3 , 192.168.1.254  (3: Identifica o Gateway)
 </code></pre>
 </li>
 <li>
@@ -210,14 +214,15 @@
 </li>
 </ul>
 <p>Arquivo de configuração do dnsmasq</p>
-<p><img alt="Alt text" src="Fotos-DHCP/Foto1.png" /></p>
+<p><img alt="Alt text" src="Fotos-DHCP/Foto1.jpg" /></p>
 <p>Esse será o modo de configura no linux (alpine)</p>
 <p>Caminho: /etc/network/interface</p>
 <p><img alt="Alt text" src="Fotos-DHCP/Foto2.png" /></p>
 <p>É esse no windows</p>
 <p><img alt="Alt text" src="Fotos-DHCP/Foto3.png" /></p>
 <h2 id="teste">Teste</h2>
-<p><img alt="Alt text" src="Fotos-DHCP/teste1.png" /></p>
+<p><img alt="Alt text" src="Fotos-DHCP/teste1.png" />
+<img alt="Alt text" src="Fotos-DHCP/Teste2.jpg" /></p>
               
             </div>
           </div>
