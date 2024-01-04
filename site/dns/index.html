@@ -161,29 +161,53 @@
                 <h1 id="dns">DNS</h1>
 <h2 id="instalacao">Instalação</h2>
 <ul>
-<li>samba</li>
+<li>samba-dc</li>
 <li>krb5</li>
+<li>smbclient</li>
 </ul>
 <h2 id="configuracao">Configuração</h2>
 <p>1º - Vamos configurar o nome de nossa máquina com o nome de nosso dominio em: (/etc/hostname)</p>
-<pre><code>berlin.alemanha.lab
+<pre><code>EX: berlin.alemanha.lab
 </code></pre>
 <p>2º - Agora configura a linha do local host em: (/etc/hosts)</p>
-<pre><code>berlin.alemanha.lab
+<pre><code>EX: berlin.alemanha.lab
 </code></pre>
-<p>2.1 - Faça um backup do arquivo smb.conf que está em: (/etc/samba/smb.conf)</p>
+<p>2.1º - Faça um backup do arquivo smb.conf que está em: (/etc/samba/smb.conf)</p>
+<p>2.2º - Desative o samba antes de iniciar o passo (3)</p>
+<ul>
+<li>Alpine (rc-service samba stop)</li>
+<li>Baseados no debian (systemctl stop samba)</li>
+</ul>
 <p>3º - Após isso vamos configura nosso domínio usando:</p>
 <ul>
 <li>samba-tool domain provision --use-rfc2307 --interactive</li>
 </ul>
-<p>Incluir o(s) nome(s) e o conteúdo do(s) arquivo(s) de configuração.</p>
-<p>Cinco registros (4 pontos cada):</p>
+<p>4º Essa são as etapas da configuração <strong>(O que está entre [ ] e o padrão só da ENTER)</strong></p>
+<p><img alt="Alt text" src="Fotos-DNS/Foto1.jpg" /></p>
+<p>4.1 Despois de configura vamo ativar o samba</p>
 <ul>
-<li>3 do tipo A (Endereços);</li>
-<li>2 do tipo CNAME (<code>www</code> e <code>docs</code>);</li>
+<li>Alpine (rc-service samba start)</li>
+<li>Baseados no debian (systemctl start samba)</li>
 </ul>
+<p>5º Após a configuração vamos para o windows <strong>(Ambas as máquinas devem está na mesma rede)</strong></p>
+<p><img alt="Alt text" src="Fotos-DNS/Foto2.jpg" /></p>
+<p>5.1º Vai abrir essa tela, digite o domínio criado</p>
+<p><img alt="Alt text" src="Fotos-DNS/Foto3.jpg" /></p>
+<p>5.2º Quando entra, vai ficar assim:</p>
+<p><img alt="Alt text" src="Fotos-DNS/Foto4.jpg" /></p>
+<p>6º Para criar um host A é assim: Clique com o direito na tela -&gt; Novo Host (A ou AAAA)</p>
+<p><img alt="Alt text" src="Fotos-DNS/Foto6.jpg" /></p>
+<p>6.1º Insira um nome e o ip de redirecionamento</p>
+<p><img alt="Alt text" src="Fotos-DNS/Foto7.jpg" /></p>
+<p>6.2º Criando um cname</p>
+<p><img alt="Alt text" src="Fotos-DNS/Foto8.jpg" /></p>
+<p>6.3º Atribuindo um cname: Informe um nome e clique em proucurar, encontre o A criado</p>
+<p><img alt="Alt text" src="Fotos-DNS/Foto9.jpg" />
+<img alt="Alt text" src="Fotos-DNS/Foto10.jpg" /></p>
+<p>7º Arquivo final </p>
+<p><img alt="Alt text" src="Fotos-DNS/Foto11.jpg" /></p>
 <h2 id="teste">Teste</h2>
-<p><a href="https://im.ge/i/xuDmFM"><img alt="dns" src="https://i.im.ge/2023/12/22/xuDmFM.dns.jpg" /></a></p>
+<p><img alt="Alt text" src="Fotos-DNS/Teste.jpg" /></p>
               
             </div>
           </div>
