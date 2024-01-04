@@ -46,7 +46,7 @@ todas as configurações no arquivo(exemplo.conf) vai migra para dnsmasq.conf.
 
         EX:dhcp-host= Ip-da-máquina, Mac-da-máquina
 
-Arquivo de configuração do dnsmasq
+Exemplo do arquivo de configuração do dnsmasq
 
 ![Alt text](Fotos-DHCP/Foto1.jpg)
 
